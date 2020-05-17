@@ -1,0 +1,13 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #000;
+  --inverted-text-color: #fff;
+  --accent-color: #000;
+  --border-color: #000;
+  --inverted-border-color: #000;
+}
