@@ -3,34 +3,50 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Cory Caprista</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
 <body>
   <header>
-    <nav>
+    <nav class="mainnav">
       <ul>
-        <li><a href="/"><img src="images/logo.svg" alt="Cory Caprista"></a></li>
+        <li class="logo"><a href="/"><img src="images/logo.svg" alt="Cory Caprista"></a></li>
         <li><a href="#">Supergood</a></li>
         <li><a href="#">Podcast</a></li>
         <li><a href="#">Instagram</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
-      <a href="#">Newsletter Signup</a>
+      <a class="signup" href="#">Newsletter Signup</a>
     </nav>
 
     <section class="intro-section">
-      <h1>Hi I'm <em>Cory</em>,</h1>
-      <p>I am on this planet to create a world of love, laughter, and fulfillment. I am a passionate servant to my missions: developing and supporting leaders, nurturing a thriving community of friends and family, and the total optimization of my human experience. I do my best to live in the balance of yin and yang: ambition and humility, purpose and play, the sacred and the profane. Maybe we already know each other, or maybe we will get the chance to in the near future, regardless I will try to share honestly and make your life a little bit better however I can.</p>
-
-      <img src="images/cory.jpg" alt="Cory Caprista" class="profile-picture">
+      <div container>
+        <div grid="bottom">
+          <div column="8">
+            <h1>Hi I'm <em>Cory</em>,</h1>
+            <p>I am on this planet to create a world of love, laughter, and fulfillment. I am a passionate servant to my missions: developing and supporting leaders, nurturing a thriving community of friends and family, and the total optimization of my human experience. I do my best to live in the balance of yin and yang: ambition and humility, purpose and play, the sacred and the profane. Maybe we already know each other, or maybe we will get the chance to in the near future, regardless I will try to share honestly and make your life a little bit better however I can.</p>
+          </div>
+          <div column="4">
+            <div class="profile-picture">
+              <img src="images/cory.jpg" alt="Cory">
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </header>
 
   <main>
-    <section>
-      <h2>Interested in Coaching?</h2>
-      <p>If you came here looking to get in touch with me about coaching, let’s get connected and explore if working together would be in alignment and mutually inspiring.</p>
-      <a href="#">Email Me</a>
+    <section class="subsection -cta">
+      <div container>
+        <div grid>
+          <div column="8 +2">
+            <h2>Interested in Coaching?</h2>
+            <p>If you came here looking to get in touch with me about coaching, let’s get connected and explore if working together would be in alignment and mutually inspiring.</p>
+            <a href="#" class="button">Email Me</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section>
@@ -74,18 +90,23 @@
       <img src="images/yoga.png" alt="">
     </section>
 
-    <section>
-      <h2>Email CTA</h2>
-      <p>To keep up with the work I do, drop me your email. I promise to only send you good things with the intention of adding value to your life.</p>
+    <section class="subsection -cta">
+      <div container>
+        <div grid>
+          <div column="8 +2">
+            <h2>Email CTA</h2>
+            <p>To keep up with the work I do, drop me your email. I promise to only send you good things with the intention of adding value to your life.</p>
 
-      <fieldset>
-        <input type="email">
-        <button>Subscribe</button>
-      </fieldset>
+            <fieldset>
+              <input type="email" placeholder="Sign up for our newsletter"><button>Subscribe</button>
+            </fieldset>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
+  <footer container>
     <section>
       <a href="#"><img src="images/spotify-white.svg" alt="Spotify" title="The Supergood Podcast on Spotify"></a>
       <a href="#"><img src="images/instagram-white.svg" alt="" title="Supergood on Instagram"></a>
