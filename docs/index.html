@@ -6,7 +6,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="main.css">
 </head>
-<body>
+<body id="top">
   <header>
     <nav class="mainnav">
       <ul>
@@ -22,11 +22,11 @@
     <section class="intro-section">
       <div container>
         <div grid="bottom">
-          <div column="8">
+          <div column="12 s8">
             <h1>Hi I'm <em>Cory</em>,</h1>
             <p>I am on this planet to create a world of love, laughter, and fulfillment. I am a passionate servant to my missions: developing and supporting leaders, nurturing a thriving community of friends and family, and the total optimization of my human experience. I do my best to live in the balance of yin and yang: ambition and humility, purpose and play, the sacred and the profane. Maybe we already know each other, or maybe we will get the chance to in the near future, regardless I will try to share honestly and make your life a little bit better however I can.</p>
           </div>
-          <div column="4">
+          <div column="12 s4">
             <div class="profile-picture">
               <img src="images/cory.jpg" alt="Cory">
             </div>
@@ -40,7 +40,7 @@
     <section class="subsection -cta">
       <div container>
         <div grid>
-          <div column="8 +2">
+          <div column="12 s8 s+2">
             <h2>Interested in Coaching?</h2>
             <p>If you came here looking to get in touch with me about coaching, let’s get connected and explore if working together would be in alignment and mutually inspiring.</p>
             <a href="#" class="button">Email Me</a>
@@ -50,62 +50,68 @@
     </section>
 
     <section container class="subsection">
-      <div grid="center">
-        <div class="subsection-content -left -decoration-bottomright" column="6">
-          <h2>Supergood</h2>
-          <p>Supergood is my coaching company focusing on the whole person: professional and personal. It carries my ambitions for creating more resilient and capable people and supporting them to bring more good things in this world. Whatever our human potential is, Supergood is in the business of realizing it.</p>
+      <div grid>
+        <div class="subsection-content -left -decoration-bottomright" column="12 s6">
+          <div class="vcenter">
+            <h2>Supergood</h2>
+            <p>Supergood is my coaching company focusing on the whole person: professional and personal. It carries my ambitions for creating more resilient and capable people and supporting them to bring more good things in this world. Whatever our human potential is, Supergood is in the business of realizing it.</p>
 
-          <a href="#">
-            <img src="images/logo-colored.svg">
-            <span>Visit supergood.com</span>
-          </a>
+            <a href="#" class="main-link -company">
+              <img src="images/logo-colored.svg">
+              <span>Visit supergood.com</span>
+            </a>
+          </div>
         </div>
 
-        <div column="6" class="bg-wide -audience"></div>
+        <div column="12 s6" class="bg-wide -audience"></div>
       </div>
     </section>
 
     <section container class="subsection">
-      <div grid="center">
-        <div column="6" class="bg-wide -podcast"></div>
+      <div grid>
+        <div column="12 s6" class="bg-wide -podcast"></div>
 
-        <div class="subsection-content -right" column="6">
-          <h2>The<br>Supergood<br>Podcast</h2>
-          <p>The process of becoming a better person should be fun and addictive. We bring the best of the best from the fast moving worlds of personal and professional development to you—and call out the bullshit as we see it too.</p>
+        <div class="subsection-content -right" column="12 s6">
+          <div class="vcenter">
+            <h2>The<br>Supergood<br>Podcast</h2>
+            <p>The process of becoming a better person should be fun and addictive. We bring the best of the best from the fast moving worlds of personal and professional development to you—and call out the bullshit as we see it too.</p>
 
-          <a href="#">
-            <img src="images/spotify-logo.svg">
-            <span>Supergood on Spotify</span>
-          </a>
+            <a href="#" class="main-link -podcast">
+              <img src="images/spotify-logo.svg">
+              <span>Supergood on Spotify</span>
+            </a>
+          </div>
         </div>
       </div>
     </section>
 
     <section container class="subsection">
-      <div grid="center">
-        <div class="subsection-content -left -decoration-topleft" column="6">
-          <h2>Social Media</h2>
-          <p>Social media is only worthwhile if it makes your life better. Try following us and if we add to your experience, and maybe even make you laugh, stick around.</p>
+      <div grid>
+        <div class="subsection-content -left -decoration-topleft" column="12 s6">
+          <div class="vcenter">
+            <h2>Social Media</h2>
+            <p>Social media is only worthwhile if it makes your life better. Try following us and if we add to your experience, and maybe even make you laugh, stick around.</p>
 
-          <a href="#">
-            <img src="images/instagram-logo1.svg">
-            <span>Supergood on Instagram</span>
-          </a>
+            <a href="#" class="main-link -instagram1">
+              <img src="images/instagram-logo1.svg">
+              <span>Supergood on Instagram</span>
+            </a>
 
-          <a href="#">
-            <img src="images/instagram-logo2.svg">
-            <span>My Personal Instagram</span>
-          </a>
+            <a href="#" class="main-link -instagram2">
+              <img src="images/instagram-logo2.svg">
+              <span>My Personal Instagram</span>
+            </a>
+          </div>
         </div>
 
-        <div column="6" class="bg-wide -yoga"></div>
+        <div column="12 s6" class="bg-wide -yoga"></div>
       </div>
     </section>
 
     <section class="subsection -cta">
       <div container>
         <div grid>
-          <div column="8 +2">
+          <div column="12 s8 s+2">
             <h2>Email CTA</h2>
             <p>To keep up with the work I do, drop me your email. I promise to only send you good things with the intention of adding value to your life.</p>
 
@@ -121,19 +127,20 @@
   <footer class="main-footer">
     <div container>
       <div grid="center">
-        <div column="6">
+        <div column="12 s6">
           <a href="#"><img src="images/spotify-white.svg" alt="Spotify" title="The Supergood Podcast on Spotify"></a>
           <a href="#"><img src="images/logo.svg" alt="" title=""></a>
           <a href="#"><img src="images/instagram-white.svg" alt="" title="Supergood on Instagram"></a>
           <a href="#"><img src="images/instagram-white.svg" alt="" title="My Personal Instagram"></a>
         </div>
-        <div column="6">
+
+        <div column="12 s6">
           <p>Thanks for checking out my work!</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <a href="#" class="go-up"><img src="images/arrow-up.svg" alt="Go up" title="Go up"></a>
+  <a href="#top" class="go-up"><img src="images/arrow-up.svg" alt="Go up" title="Go up"></a>
 </body>
 </html>

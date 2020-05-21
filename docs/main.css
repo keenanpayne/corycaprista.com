@@ -23,7 +23,7 @@ Grid System
   /* Max width for container */
   --grid-container-width: 1200px;
   /* Gutter size */
-  --grid-gutter: 2rem;
+  --grid-gutter: 4rem;
 
   --width-1: calc(1 / 12 * 100%);
   --width-2: calc(2 / 12 * 100%);
@@ -50,7 +50,7 @@ Grid System
   display: flex;
   margin-left: calc(var(--grid-gutter) / -2);
   margin-right: calc(var(--grid-gutter) / -2);
-  flex-wrap: wrap
+  flex-wrap: wrap;
 }
 
 [grid~="between"] { justify-content: space-between; }
@@ -90,10 +90,7 @@ Grid System
 [column~="+10"] { margin-left: var(--width-10); }
 [column~="+11"] { margin-left: var(--width-11); }
 
-@media (min-width: 480px) {
-  /* Resize container to current breakpoint */
-  [container~="solid"] { max-width: 480px; }
-
+@media (min-width: 640px) {
   /* Columns */
   [column~="s1"] { flex-basis: var(--width-1); max-width: var(--width-1); }
   [column~="s2"] { flex-basis: var(--width-2); max-width: var(--width-2); }
@@ -138,7 +135,7 @@ img {
 
 h1, h2 {
   font-size: 2.5rem;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
   h1 em {
@@ -210,7 +207,7 @@ Components
 
   .mainnav li {
     border-right: 1px solid #fff;
-    padding: 2rem;
+    padding: 1.3rem 2rem;
     list-style: none;
     display: inline-block;
   }
@@ -286,7 +283,7 @@ Components
   }
 
 .subsection.-cta {
-  padding: 4rem 0;
+  padding: 3rem 0 6rem;
   text-align: center;
   border-top: 10px solid;
   border-bottom: 10px solid;
@@ -297,14 +294,15 @@ Components
 .subsection-content {
   padding: 2rem 0;
   height: 40rem;
+  line-height: 2.3;
+  display: flex;
+  align-items: center;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
-  .subsection-content.-left {
-    padding-right: 2rem
-  }
-
-  .subsection-content.-right {
-    padding-left: 2rem
+  .subsection-content h2 {
+    line-height: 1.2;
   }
 
   .subsection-content.-decoration-bottomright,
@@ -314,11 +312,11 @@ Components
   }
 
   .subsection-content.-decoration-bottomright {
-    background-position: bottom right;
+    background-position: bottom 0.5rem right 0.5rem;
   }
 
   .subsection-content.-decoration-topleft {
-    background-position: top left;
+    background-position: top 0.5rem left 0.5rem;
   }
 
 .bg-wide {
@@ -344,7 +342,7 @@ Components
 button {
   background-color: var(--accent-color);
   border: none;
-  padding: 1rem 3rem;
+  padding: 0.7rem 3rem;
   text-decoration: none;
   color: #fff;
   display: inline-block;
@@ -376,4 +374,110 @@ button {
   box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.38);
 }
 
+  .go-up:focus,
+  .go-up:active {
+    outline: none;
+  }
 
+.main-link {
+  text-decoration: none;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+  .main-link img {
+    vertical-align: middle;
+    margin-right: 1.5rem;
+  }
+
+  .main-link.-company {
+    color: #EE6473;
+  }
+
+  .main-link.-podcast {
+    color: #1DB954;
+  }
+
+  .main-link.-instagram1 {
+    color: #B900B4;
+  }
+
+  .main-link.-instagram2 {
+    color: #E1306C;
+  }
+
+@media (max-width: 640px) {
+  :root {
+    font-size: 16px;
+  }
+
+  .mainnav {
+    flex-direction: column;
+    padding-bottom: 1rem;
+  }
+
+    .mainnav .logo {
+      display: block;
+      text-align: center;
+      margin: 1rem 0 0.5rem;
+      border: 0;
+      padding: 0;
+    }
+
+    .mainnav li {
+      width: 100%;
+      text-align: center;
+      border: none !important;
+      padding: 0.7rem 0;
+    }
+
+    .mainnav .signup {
+      margin-top: 1rem;
+    }
+
+  .intro-section {
+    padding: 2rem 0;
+    background-position: unset;
+  }
+
+  .subsection-content {
+    background: unset !important;
+    height: unset;
+  }
+
+  .bg-wide.-podcast {
+    margin-top: 3rem;
+  }
+
+  fieldset input,
+  fieldset button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .subsection.-cta {
+    padding: 1rem 0 3rem;
+  }
+
+  .main-footer,
+  .main-footer p {
+    text-align: center;
+  }
+
+  .main-footer p {
+    margin-top: 1rem;
+  }
+
+  .main-footer a {
+    margin: 0 0.5rem;
+  }
+
+  .profile-picture {
+    width: 15rem;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+  }
+}
