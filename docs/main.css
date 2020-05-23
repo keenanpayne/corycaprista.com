@@ -203,13 +203,13 @@ Components
   .mainnav ul {
     padding: 0;
     margin: 0;
+    display: flex;
+    align-items: center;
   }
 
   .mainnav li {
     border-right: 1px solid #fff;
-    padding: 1.3rem 2rem;
     list-style: none;
-    display: inline-block;
   }
 
   .mainnav li:nth-child(2) {
@@ -220,6 +220,14 @@ Components
     color: white;
     text-decoration: none;
     text-transform: uppercase;
+    padding: 1.3rem 2rem;
+    display: block;
+  }
+
+  .mainnav a:hover,
+  .mainnav a:focus {
+    background-color: #fff;
+    color: #000;
   }
 
   .mainnav img {
@@ -229,6 +237,16 @@ Components
   .mainnav .logo {
     padding: 0 1.5rem 0 0;
     border-right: none;
+  }
+
+  .mainnav .logo a {
+    padding: 0;
+  }
+
+  .mainnav .logo a:hover,
+  .mainnav .logo a:focus {
+    background-color: unset;
+    color: unset;
   }
 
   .mainnav .signup {
