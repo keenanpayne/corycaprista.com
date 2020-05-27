@@ -183,9 +183,10 @@ h1, h2 {
 
   h1 em::before {
     content: '';
-    height: 7px;
+    height: .15em;
     position: absolute;
     left: 0;
+    opacity: .85;
     right: 0;
     bottom: 0;
     background-color: #FF9999;
@@ -200,29 +201,56 @@ p {
   margin: 0 0 2rem 0;
 }
 
-fieldset {
-  border: none;
+.newsletter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
-  fieldset input,
-  fieldset button {
-    line-height: 2.5;
-    vertical-align: middle;
-    font-size: 0.7rem;
-    font-family: inherit;
+
+  .newsletter label {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
   }
 
-  fieldset input {
-    border: 1px solid #000;
-    padding: 0 0.5rem;
-    font-size: 0.7rem;
-    color: inherit;
-    width: 40ch;
+  .newsletter input[type="email"],
+  .newsletter input[type="submit"] {
+    font-size: .75rem;
+  }
+  
+  .newsletter input[type="email"] {
+    color: #101010;
+    max-width: 300px;
+    border: 2px solid black;
+    padding-bottom: .65rem;
+    padding-top: .65rem;
+    text-indent: .65rem;
+    width: 100%;
   }
 
-  fieldset button {
-    padding-top: 1px;
-    padding-bottom: 1px;
+  .newsletter input[type="submit"] {
+    background-color: #101010;
+    border: 2px solid #101010;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-top: -2px;
+    margin-top: 0;
+    margin-left: -2px;
+    font-weight: 600;
     text-transform: uppercase;
+    padding: .65rem 1.5rem;
+  }
+
+  .newsletter input[type="submit"]:hover {
+    background-color: white;
+    border-color: black;
+    color: black;
   }
 
 h1, h2, h3 {
@@ -299,14 +327,15 @@ Components
     border: 2px solid #fff;
     text-transform: none;
     padding: 0.5rem 2rem;
+    transition: background 150ms;
     font-size: 0.7rem;
   }
 
 .intro-section {
-  overflow: auto;
   background-image: url('images/hero-background.png');
   background-size: cover;
   background-repeat: no-repeat;
+  overflow-x: hidden;
   padding: 10rem 0;
   background-position: bottom;
 }
@@ -353,6 +382,12 @@ Components
     z-index: -1;
   }
 
+.subsection p {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 60ch;
+}
+
 .subsection.-cta {
   padding: 3rem 0 6rem;
   text-align: center;
@@ -396,8 +431,8 @@ Components
   background-position: center;
 }
 
-  .bg-wide.-yoga {
-    background-image: url('images/yoga.png');
+  .bg-wide.-social-media {
+    background-image: url('images/cory-cliff.jpg');
   }
 
   .bg-wide.-podcast {
@@ -582,10 +617,18 @@ button {
     padding-bottom: 4rem;
   }
 
-  fieldset input,
-  fieldset button {
+  .newsletter {
+    display: block;
+  }
+
+  .newsletter input[type="email"],
+  .newsletter input[type="submit"] {
+    max-width: none;
     width: 100%;
-    text-align: center;
+  }
+
+  .newsletter input[type="email"] {
+    margin-bottom: .5rem;
   }
 
   .subsection.-cta {
