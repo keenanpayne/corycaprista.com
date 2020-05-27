@@ -635,6 +635,10 @@ button {
     padding: 1rem 0 3rem;
   }
 
+  .bg-wide {
+    height: 30rem;
+  }
+
   .main-footer,
   .main-footer p {
     text-align: center;
