@@ -198,13 +198,14 @@ h1, h2 {
   }
 
 p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
 .newsletter {
   align-items: center;
   display: flex;
   justify-content: center;
+  margin-top: 2rem;
 }
 
   .newsletter label {
@@ -357,6 +358,10 @@ Components
     text-shadow: 1px 1px 0 rgba(0, 0, 0, .15);
   }
 
+  .intro-section p:not(:last-of-type) {
+    margin-bottom: 1em;
+  }
+
 .profile-picture {
   position: relative;
   user-select: none;
@@ -385,7 +390,7 @@ Components
 .subsection p {
   margin-left: auto;
   margin-right: auto;
-  max-width: 60ch;
+  max-width: 65ch;
 }
 
 .subsection.-cta {
@@ -473,7 +478,12 @@ button {
 }
 
   .main-footer a {
+    display: inline-block;
     margin-right: 1.25rem;
+  }
+
+  .main-footer img {
+    width: 2rem;
   }
 
   .main-footer p {
@@ -498,11 +508,16 @@ button {
   }
 
 .main-link {
+  align-items: center;
+  display: flex;
   text-decoration: none;
   font-weight: 500;
-  display: block;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
 }
+
+  .main-link:first-of-type {
+    margin-top: 2rem;
+  }
 
   .main-link:hover {
     text-decoration: underline;
@@ -511,6 +526,7 @@ button {
   .main-link img {
     vertical-align: middle;
     margin-right: 1rem;
+    max-width: 2rem;
   }
 
   .main-link.-company {
@@ -519,6 +535,10 @@ button {
 
   .main-link.-podcast {
     color: #1DB954;
+  }
+
+  .main-link.-twitter {
+    color: #1da1f2;
   }
 
   .main-link.-instagram1 {
@@ -611,10 +631,16 @@ button {
     background-position: unset;
   }
 
+  .subsection.-cta {
+    text-align: left;
+  }
+
   .subsection-content {
     background: unset !important;
     height: unset;
     padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .newsletter {
@@ -649,7 +675,6 @@ button {
   }
 
   .main-footer a {
-    display: inline-block;
     margin: 0 .25rem;
   }
 
@@ -668,5 +693,9 @@ button {
 
   .social-footer {
     width: 2rem;
+  }
+
+  .go-up {
+    display: none;
   }
 }

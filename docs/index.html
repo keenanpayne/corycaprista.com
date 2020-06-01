@@ -9,11 +9,35 @@
   <header>
     <nav class="mainnav">
       <ul>
-        <li class="logo"><a href="/"><img src="images/logo.svg" alt="Cory Caprista"></a></li>
-        <li><a href="#">Supergood</a></li>
-        <li><a href="#">Podcast</a></li>
-        <li><a href="#">Instagram</a></li>
-        <li><a href="#">Contact</a></li>
+        <li class="logo">
+          <a href="/" title="Head home">
+            <img src="images/logo.svg" alt="Cory Caprista">
+          </a>
+        </li>
+
+        <li>
+          <a href="https://besupergood.com/" title="Check out Supergood">
+            Supergood
+          </a>
+        </li>
+
+        <li>
+          <a href="https://open.spotify.com/show/5rxt3CUKue6xOoOfsLKsoo" title="The Supergood Podcast on Spotify">
+            Podcast
+          </a>
+        </li>
+
+        <li>
+          <a href="#social">
+            Social
+          </a>
+        </li>
+        
+        <li>
+          <a href="#contact">
+            Contact
+          </a>
+        </li>
       </ul>
       <a class="signup" href="https://besupergood.us20.list-manage.com/subscribe/post?u=06aeb934f8484df56fea6ead5&id=fc05953f97">Newsletter Signup</a>
     </nav>
@@ -22,8 +46,14 @@
       <div container>
         <div grid="center">
           <div column="12 s8 #2 s#1">
-            <h1>Hi I'm <em>Cory</em>,</h1>
-            <p class="intro-description">I am on this planet to create a world of love, laughter, and fulfillment. I am a passionate servant to my missions: developing and supporting leaders, nurturing a thriving community of friends and family, and the total optimization of my human experience. I do my best to live in the balance of yin and yang: ambition and humility, purpose and play, the sacred and the profane. Maybe we already know each other, or maybe we will get the chance to in the near future, regardless I will try to share honestly and make your life a little bit better however I can.</p>
+            <h1>Hey! I'm <em>Cory</em>.</h1>
+            <p>
+              I believe I am on this planet to create a world of love, laughter, and fulfillment. I am a passionate servant to my missions: developing and supporting leaders, nurturing my thriving community of friends and family, and the total optimization of my own human experience. I do my best to live in the balance of yin and yang: ambition and humility, purpose and play, the sacred and the practical.
+            </p>
+
+            <p>
+              Maybe we already know each other? If not, then I hope we’ll have the chance to soon. Either way, my commitment is to share with you honestly and make your life better in whatever capacity I can.
+            </p>
           </div>
 
           <div column="12 s4 #1 s#2">
@@ -41,9 +71,44 @@
       <div container>
         <div grid>
           <div column="12 s10 s+1">
-            <h2>Interested in Coaching?</h2>
-            <p>If you came here looking to get in touch with me about coaching, let’s get connected and explore if working together would be in alignment and mutually inspiring.</p>
+            <h2 id="contact">Interested in Coaching?</h2>
+            <p>If you came here to get in touch with me about coaching, you’ve come to the right place. Let’s connect and explore if working together aligns and would be inspiring for us both. Click below for a discovery call, free of charge.</p>
             <a href="#" class="button">Email Me</a>
+
+            <form name="contact" netlify>
+              <label>
+                Name
+
+                <input type="text" name="name" placeholder="First Last" />
+              </label>
+
+              <label>
+                Email
+
+                <input type="email" name="email" placeholder="name@company.com" />
+              </label>
+
+              <label>
+                Phone
+
+                <input type="tel" name="Phone" placeholder="555-555-5555" />
+              </label>
+
+              <label>Interested in a 30 min complimentary consultation?</label>
+              <input name="input_4" type="radio" value="Yes" checked="checked" id="choice_1_4_0">
+              <label for="choice_1_4_0" id="label_1_4_0">Yes</label>
+
+              <input name="input_4" type="radio" value="No, I don't like nice things" id="choice_1_4_1">
+              <label for="choice_1_4_1" id="label_1_4_1">No, I don't like nice things</label>
+
+              <label>
+                Message
+
+                <textarea placeholder="Your message goes here." rows="10" cols="50"></textarea>
+              </label>
+
+              <button type="submit">Get in touch</button>
+            </form>
           </div>
         </div>
       </div>
@@ -54,9 +119,11 @@
         <div class="subsection-content -left -decoration-bottomright" column="12 s6 #2 s#1">
           <div class="vcenter">
             <h2>Supergood</h2>
-            <p>Supergood is my coaching company focusing on the whole person: professional and personal. It carries my ambitions for creating more resilient and capable people and supporting them to bring more good things in this world. Whatever our human potential is, Supergood is in the business of realizing it.</p>
+            <p>
+              Supergood is my coaching company. We focus on a 'whole person' approach: looking deep into the professional and personal in parallel. Supergood also shares my ambitions for creating more resilient and capable leaders and supporting them to bring more greatness in this world. Whatever the potential is, Supergood is in the business of realizing it.
+            </p>
 
-            <a href="#" class="main-link -company">
+            <a href="https://besupergood.com" class="main-link -company" title="Check out Supergood">
               <img src="images/logo-colored.svg" alt="Supergood logo"><span>Visit supergood.com</span>
             </a>
           </div>
@@ -73,9 +140,11 @@
         <div class="subsection-content -right" column="12 s6">
           <div class="vcenter">
             <h2>Supergood Podcast</h2>
-            <p>The process of becoming a better person should be fun and addictive. We bring the best of the best from the fast moving worlds of personal and professional development to you—and call out the bullshit as we see it too.</p>
+            <p>
+              The process of becoming a better person should be fun and addictive. We bring the best of the best from the fast moving worlds of personal and professional development straight to you—and call bullshit when we see it, too.
+            </p>
 
-            <a href="#" class="main-link -podcast">
+            <a href="https://open.spotify.com/show/5rxt3CUKue6xOoOfsLKsoo" class="main-link -podcast" title="The Supergood Podcast on Spotify">
               <img src="images/spotify-logo.svg" alt="Spotify logo"><span>Supergood on Spotify</span>
             </a>
           </div>
@@ -87,15 +156,31 @@
       <div grid>
         <div class="subsection-content -left -decoration-topleft" column="12 s6 #2 s#1">
           <div class="vcenter">
-            <h2>Social Media</h2>
-            <p>Social media is only worthwhile if it makes your life better. Try following us and if we add to your experience, and maybe even make you laugh, stick around.</p>
+            <h2 id="social">Social Media</h2>
 
-            <a href="#" class="main-link -instagram1">
-              <img src="images/instagram-logo1.svg" alt="Instagram logo"><span>Supergood on Instagram</span>
+            <p>
+              Social media is only worthwhile if it makes your life feel fuller. Follow us and if we add to your experience—maybe even make you laugh—then choose to stick around.
+            </p>
+            
+            <a href="https://twitter.com/corycaprista" class="main-link -twitter" target="_blank" title="Follow Cory on Twitter">
+              <img src="images/twitter-logo.svg" alt="Twitter logo">
+                <span>
+                  My Personal Twitter
+                </span>
             </a>
 
-            <a href="#" class="main-link -instagram2">
-              <img src="images/instagram-logo2.svg" alt="Instagram logo"><span>My Personal Instagram</span>
+            <a href="https://www.instagram.com/corycaprista/" class="main-link -instagram2" target="_blank" title="Follow me on Instagram">
+              <img src="images/instagram-logo2.svg" alt="Instagram logo">
+                <span>
+                  My Personal Instagram
+                </span>
+            </a>
+
+            <a href="https://www.instagram.com/be_supergood/" class="main-link -instagram1" target="_blank" title="Follow Supergood on Instagram">
+              <img src="images/instagram-logo1.svg" alt="Instagram logo">
+                <span>
+                  Supergood on Instagram
+                </span>
             </a>
           </div>
         </div>
@@ -109,7 +194,14 @@
         <div grid>
           <div column="12 s10 s+1">
             <h2>Keep in touch</h2>
-            <p>To keep up with the work I do, drop me your email. I promise to only send you good things with the intention of adding value to your life.</p>
+
+            <p>
+              I know. Another newsletter. But you’re going to like this one. 
+            </p>
+
+            <p>
+              To keep up with the work I do in helping businesses and the people who create them reach unprecedented potential, drop me your email. I promise only to send you something if I think it will add value to your life.
+            </p>
 
             <form action="https://besupergood.us20.list-manage.com/subscribe/post?u=06aeb934f8484df56fea6ead5&amp;id=fc05953f97" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="newsletter validate" target="_blank" novalidate="">
               <label for="email">Email</label>
@@ -138,10 +230,21 @@
     <div container>
       <div grid="center">
         <div column="12 s6">
-          <a href="#"><img class="social-footer" src="images/spotify-white.svg" alt="Spotify" title="The Supergood Podcast on Spotify"></a>
-          <a href="#"><img class="social-footer" src="images/logo.svg" alt="" title=""></a>
-          <a href="#"><img class="social-footer" src="images/instagram-white.svg" alt="" title="Supergood on Instagram"></a>
-          <a href="#"><img class="social-footer" src="images/instagram-white.svg" alt="" title="My Personal Instagram"></a>
+          <a href="https://besupergood.com/" title="Check out Supergood">
+            <img class="social-footer" src="images/logo.svg" alt="Supergood">
+          </a>
+
+          <a href="https://open.spotify.com/show/5rxt3CUKue6xOoOfsLKsoo" target="_blank" title="The Supergood Podcast on Spotify">
+            <img class="social-footer" src="images/spotify-white.svg" alt="Spotify">
+          </a>
+
+          <a href="https://www.instagram.com/corycaprista/" target="_blank" title="My Personal Instagram">
+            <img class="social-footer" src="images/instagram-white.svg" alt="Instagram">
+          </a>
+
+          <a href="https://twitter.com/corycaprista" target="_blank" title="Follow Cory on Instagram">
+            <img class="social-footer" src="images/twitter-white.svg" alt="Twitter">
+          </a>
         </div>
       </div>
     </div>
