@@ -511,8 +511,8 @@ button {
   }
 
   .contact .contact-option input { 
-    flex: 0;
-    margin: 0 1rem 0 0;
+    margin: 0 .5rem 0 0;
+    width: 1rem;
   }
 
 .main-footer {
