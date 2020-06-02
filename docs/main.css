@@ -161,6 +161,10 @@ img {
   height: auto;
 }
 
+h1, h2, h3 {
+  font-weight: normal;
+}
+
 h1 {
   font-size: 4rem;
   line-height: 1;
@@ -201,62 +205,48 @@ p {
   margin: 0 0 1rem 0;
 }
 
-.newsletter {
-  align-items: center;
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
+form input[type="email"],
+form input[type="tel"],
+form input[type="text"],
+form input[type="submit"],
+textarea {
+  font-size: .75rem;
 }
 
-  .newsletter label {
-    height: 1px;
-    left: -10000px;
-    overflow: hidden;
-    position: absolute;
-    top: auto;
-    width: 1px;
-  }
-
-  .newsletter input[type="email"],
-  .newsletter input[type="submit"] {
-    font-size: .75rem;
-  }
-  
-  .newsletter input[type="email"] {
-    color: #101010;
-    max-width: 300px;
-    border: 2px solid black;
-    padding-bottom: .65rem;
-    padding-top: .65rem;
-    text-indent: .65rem;
-    width: 100%;
-  }
-
-  .newsletter input[type="submit"] {
-    background-color: #101010;
-    border: 2px solid #101010;
-    color: white;
-    cursor: pointer;
-    display: inline-block;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-top: -2px;
-    margin-top: 0;
-    margin-left: -2px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: .65rem 1.5rem;
-  }
-
-  .newsletter input[type="submit"]:hover {
-    background-color: white;
-    border-color: black;
-    color: black;
-  }
-
-h1, h2, h3 {
-  font-weight: normal;
+form input[type="email"],
+form input[type="tel"],
+form input[type="text"],
+textarea {
+  color: #101010;
+  border: 2px solid black;
+  padding-bottom: .65rem;
+  padding-top: .65rem;
+  text-indent: .65rem;
+  width: 100%;
 }
+
+form input[type="submit"] {
+  background-color: #101010;
+  border: 2px solid #101010;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: -2px;
+  margin-top: 0;
+  margin-left: -2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: .65rem 1.5rem;
+}
+
+form input[type="submit"]:hover {
+  background-color: white;
+  border-color: black;
+  color: black;
+}
+
 
 /*
 Components
@@ -387,7 +377,7 @@ Components
     z-index: -1;
   }
 
-.subsection p {
+.subsection-paragraph {
   margin-left: auto;
   margin-right: auto;
   max-width: 65ch;
@@ -453,6 +443,7 @@ button {
   background-color: var(--accent-color);
   border: 2px solid black;
   color: #fff;
+  cursor: pointer;
   display: inline-block;
   font-size: .8rem;
   font-weight: 600;
@@ -469,6 +460,59 @@ button {
     background-color: #fff;
     border-color: #000;
     color: #000;
+  }
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 960px;
+  text-align: left;
+}
+
+  .contact .contact-label {
+    display: block;
+    font-size: .875rem;
+    line-height: 1.55;
+    margin-bottom: .5rem;
+  }
+
+  .contact-group {
+    display: block;
+    flex-basis: 49%;
+    margin-bottom: 1.5rem;
+    margin-left: 0;
+    min-width: 49%;
+  }
+
+  .contact input {
+    width: 100%;
+  }
+
+  .contact .contact-message {
+    flex-basis: 100%;
+    min-width: 100%;
+  }
+
+  .contact .contact-options {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contact .contact-option {
+    align-items: center;
+    display: flex;
+    font-size: .75rem;
+    flex: 0;
+    flex-basis: 100%;
+  }
+
+  .contact .contact-option input { 
+    flex: 0;
+    margin: 0 1rem 0 0;
   }
 
 .main-footer {
@@ -594,6 +638,26 @@ button {
   }
 }
 
+.newsletter {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+  .newsletter input[type="email"] {
+    max-width: 300px;
+  }
+
+  .newsletter label {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+  }
+
 @media (max-width: 700px) {
   :root {
     font-size: 16px;
@@ -641,6 +705,11 @@ button {
     padding-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 2rem;
+  }
+
+  .contact-group {
+    flex-basis: 100%;
+    min-width: 100%;
   }
 
   .newsletter {
