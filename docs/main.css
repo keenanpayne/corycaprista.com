@@ -220,8 +220,8 @@ textarea {
   color: #101010;
   border: 2px solid black;
   padding-bottom: .65rem;
+  padding-left: .65rem;
   padding-top: .65rem;
-  text-indent: .65rem;
   width: 100%;
 }
 
