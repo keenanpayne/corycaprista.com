@@ -85,7 +85,11 @@
               Email Me
             </button>
 
-            <form name="contact" class="contact -hidden" netlify data-netlify-recaptcha="true">
+            <form name="contact" class="contact -hidden" netlify netlify-honeypot="bot-field">
+              <p class="-hidden">
+                <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+              </p>
+
               <p class="contact-group">
                 <label>
                   <span class="contact-label">
